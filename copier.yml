@@ -1,0 +1,32 @@
+# Copier Configuration
+_subdirectory: project
+_templates_suffix: ""
+_skip_if_exists:
+  - CHANGELOG.md
+_min_copier_version: '8.0.0'
+
+# User Input
+project_name:
+  type: str
+  help: Cuál es el nombre del proyecto?
+  default: "my-project"
+
+environment:
+  type: str
+  help: Cuál es el entorno?
+  default: "dev"
+
+container_name:
+  type: str
+  help: Cuál es el nombre del contenedor?
+  default: "my-container"
+
+container_port:
+  type: int
+  help: Cuál es el puerto del contenedor?
+  default: 3000
+
+content:
+  type: str
+  help: Cuál es el contenido?
+  default: "Hello World!"
