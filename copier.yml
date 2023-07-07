@@ -30,3 +30,8 @@ content:
   type: str
   help: Cuál es el contenido?
   default: "Hello World!"
+
+aws_region:
+  type: str
+  help: En qué región queremos crear la VPC?
+  default: "us-east-1"

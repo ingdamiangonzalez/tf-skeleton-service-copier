@@ -17,3 +17,9 @@ variable "container_port" {
   description = "Container port"
   type        = number
 }
+
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default = "us-east-1"
+}
